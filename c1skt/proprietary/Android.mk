@@ -15,8 +15,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter c1skt c1ktt c1lgt i9300 i9305 n7100 n8000 n8013 n8020 t0lte t0lteatt t0ltetmo i605 l900 r950 i925 n5100 n5110 n5120,$(TARGET_DEVICE)),)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libTVOut
 LOCAL_MODULE_OWNER := samsung
@@ -36,5 +34,3 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
 include $(BUILD_PREBUILT)
-
-endif
